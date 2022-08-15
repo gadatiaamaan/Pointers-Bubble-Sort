@@ -1,0 +1,2 @@
+I tried to make a program that would be able to take any number inputs and store them into an array and then sort them but I completely failed and 
+now my brain just doesn't seem to be working right so I will just take the base results haha.

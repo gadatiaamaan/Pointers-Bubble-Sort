@@ -1,0 +1,77 @@
+main function
+- Goals: 
+  - The goal for this week as a whole is in a way to learn the language of C but also how to deal with pointers and strings along with how they are useful.
+  - In terms of this assignment, the point of this program is to take an int array and sort the values using a bubblesort technique. There are a number of 
+functions used within this program and also pointers were useful when sorting and swaping values.
+
+- Input:
+  - There is no input for this program.
+  - An int array is  provided through the starter code which causes there to be no need for an input. 
+  - int and *int are the only data types used within the program.
+
+- Output: 
+  - The output for this function is each step of the array of ints that eventually results in a sorted array of int values
+  - There is a "Before:" line that then shows every step of the way to the array being sorted.
+  - It concludes with a "After:" line that shows the final result of the array.
+
+- Steps: 
+  - Take the starter code and make sure all of the data need is provided so that the program may compile.
+  - Call the printValues function and then the sort fuctions to then print the original array and all of the arrays that form to eventually have a sorted 
+array of values.
+  - Again call the printValues function to print the final sorted array of values.
+
+printValues function
+-Goals:
+  - To print each step of the array of ints that eventually results in a sorted array of int values.
+  - There is a "Before:" line that then shows every step of the way to the array being sorted.
+  - It is then called again when it prints a "After:" line that shows the final result of the array.
+
+-Input:
+  - No inputs for the printValues function
+
+-Output:
+  - This prints each step of the array of ints that eventually results in a sorted array of int values.
+  - There is a "Before:" line that then shows every step of the way to the array being sorted.
+  - It is then called again when it prints a "After:" line that shows the final result of the array.
+
+-Steps:
+  - create a counter integer
+  - print the "[" which brackets around the array
+  - go through each value in the array with i and print each value followed by a space
+  - print the "]" which ends the array for each line
+  - create a new line to start the next array sequence 
+
+swap function
+-Goals:
+  - When the value of a number in the array is greater and also stands in a lower spot compared to the value following it, the swap function is called.
+  - This function switches the location of two values within an array.
+  - This function is called from the sort function to that all values are in the correct order.
+-Input:
+  - No inputs for the swap function
+
+-Output:
+  - There is no output for this function although it does call the printValues function for an output.
+
+-Steps:
+  - Take the int pointer of x and store it within a temp location
+  - Have the pointer of x take the value of the pointer of y
+  - Have the pointer of y take the value of the temp which used to be the pointer of x
+  - call the printValues function
+
+sort function:
+-Goals:
+  - To identify values within the array that are not in the correct order
+  - To call on the swap function to swap numbers that are not in the correct order
+  - Shuffle through all values to ensure all values are in the correct order.
+
+-Input:
+  - No inputs for the swap function
+
+-Output:
+  - There is no output for this function although it does call on the swap function
+
+-Steps:
+  - Identify two counters for the array
+  - create a for loop for for each counter to sort through the array and swap values
+  - compare the values using the counters
+  - call the swap function to swap the location of values that are not in the correct location
